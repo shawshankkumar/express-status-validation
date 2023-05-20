@@ -1,1 +1,1 @@
-## If you see this, please remind Shashank to update the readme page.
+## A dead simple npm library to validate express.js response status codes.
