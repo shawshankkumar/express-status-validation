@@ -1,6 +1,6 @@
 {
   "name": "express-status-validate",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "A dead simple npm library to validate express.js response status codes.",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,9 @@
     "node": ">=14.0.0"
   },
   "homepage": "https://github.com/shawshankkumar/express-status-validation#readme",
-  "packageManager": "pnpm@7.27.0"
+  "packageManager": "pnpm@7.27.0",
+  "dependencies": {
+    "@types/express": "^4.17.17",
+    "express": "^4.18.2"
+  }
 }
