@@ -1,6 +1,6 @@
 {
   "name": "express-status-validate",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A dead simple npm library to validate express.js response status codes.",
   "main": "index.js",
   "scripts": {
