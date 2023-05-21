@@ -3,10 +3,10 @@ import expressStatusValidate from "express-status-validate";
 
 const app = express();
 
-app.use(expressStatusValidate);
+app.use(expressStatusValidate(200));
 
 app.get('/healthcheck', (req, res) => {
-    res.status(20020).send('OK');
+    res.status(3011).send('OK');
 })
 
 app.listen(3000, () => {
