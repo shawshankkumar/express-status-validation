@@ -4,7 +4,7 @@ const expressStatusValidate = require("express-status-validate");
 const app = express();
 
 //comment out the next line to see how express will crash.
-app.use(expressStatusValidate(200));
+app.use(expressStatusValidate(500));
 
 app.get("/healthcheck", (req, res) => {
   //This should throw an error and crash an application but it doesn't thanks to me.
