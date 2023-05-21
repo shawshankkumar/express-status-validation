@@ -26,3 +26,13 @@ Open
 It doesn't break.
 
 Try commenting out the middleware and running it again, it will break 😉
+
+## Example without express-status-validate:
+
+<img width="1324" alt="image" src="https://github.com/shawshankkumar/express-status-validation/assets/74819565/ef528768-a35e-47f4-a60d-f0e88fc92fe3">
+
+
+## Example with express-status-validate enabled:
+
+<img width="1349" alt="image" src="https://github.com/shawshankkumar/express-status-validation/assets/74819565/d0e69439-12f2-4de8-ad2d-dc7e814c9729">
+
