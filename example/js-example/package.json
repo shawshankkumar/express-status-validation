@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "express-status-validate": "^1.0.11"
+    "express-status-validate": "^1.0.12"
   }
 }
