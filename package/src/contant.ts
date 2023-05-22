@@ -20,7 +20,7 @@ export const validStatusCodesObject = {
   },
   200: {
     status: "OK",
-    message: "The request was fulfilled.",
+    message: "The request was fulfilled!",
   },
   201: {
     status: "Created",
