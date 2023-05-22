@@ -1,4 +1,4 @@
-name: Tests
+name: Test
 
 on:
   pull_request:
@@ -8,11 +8,16 @@ on:
 jobs:
   push:
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: ./package
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           ref: main
           fetch-depth: 0
-      - run: npm test
+      - run: npm i -g pnpm
+      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm run build
+      - run: pnpm run test
