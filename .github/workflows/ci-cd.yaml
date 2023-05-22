@@ -15,4 +15,7 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
-      - run: npm test
+      - run: npm i -g pnpm
+      - run: pnpm i
+      - run: pnpm run build
+      - run: pnpm run test
