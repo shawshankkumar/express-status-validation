@@ -11,15 +11,15 @@
 ## Inspiration for this package!
 
 1. To learn how to make packages 😉
-2. I spent around 40-50 minutes debugging why [SRMKZILLA's](https://srmkzilla.net) backend kept crashing. Found out someone passed the mongo error codes(single digit) to express and viola. 
+2. I spent around 40-50 minutes debugging why [SRMKZILLA's](https://srmkzilla.net) backend kept crashing. Found out someone passed the mongo error codes(single digit) to express and viola.
 
 ## What does it do?
 
-It does what a middleware should, it sits quietly and on a day to day basis, you never notice it. Express is great, but it can be better. In TypeScript, passing a wrong status code is not that easy. But in JavaScript? One could pass a tank and the code would run (Thanks JS :) ). This package safeguards your app from throwing unwanted errors or crashing. What can you pass? 
+It does what a middleware should, it sits quietly and on a day to day basis, you never notice it. Express is great, but it can be better. In TypeScript, passing a wrong status code is not that easy. But in JavaScript? One could pass a tank and the code would run (Thanks JS :) ). This package safeguards your app from throwing unwanted errors or crashing. What can you pass?
 
-1. If you pass a valid status code like 200, it works. It doesn't change anything in the original status code. 
+1. If you pass a valid status code like 200, it works. It doesn't change anything in the original status code.
 2. BUT, if you pass "200" or "200OK", it converts it to 200 and sends it. But what if you pass something like 799 (invalid status code)? In that case a default status code is set and sent.
-3. And you guesses correct, you can easily set the default status code you want. 
+3. And you guesses correct, you can easily set the default status code you want.
 
 ## How to use it in your JS/TS project?
 
@@ -29,9 +29,23 @@ It does what a middleware should, it sits quietly and on a day to day basis, you
 ```
 pnpm i express-status-validate
 ```
-3. Open the entry point of your express app. 
+
+or
+
+```
+npm i express-status-validate
+```
+
+or
+
+```
+yarn add express-status-validate
+```
+
+3. Open the entry point of your express app.
 
 Our express application before adding the package:
+
 ```
 const express = require("express");
 
@@ -70,14 +84,11 @@ app.listen(3000, () => {
 
 ```
 
-> **_NOTE:_**  app.use(expressStatusValidate(500)) must be on top to work as desired.
+> **_NOTE:_** app.use(expressStatusValidate(500)) must be on top to work as desired.
 
-
-
-## Examples: 
+## Examples:
 
 We are in the process of adding more examples and testing this library to make sure it works smoothly everywhere. Currently we have the following examples (Shoutout to [Harshit Singh, my roommate :p](https://github.com/whiletrueee) for being the first user of this library) :
-
 
 1. [JavaScript Example](https://github.com/shawshankkumar/express-status-validation/tree/main/example/js-example)
 2. [TypeScript Example](https://github.com/shawshankkumar/express-status-validation/tree/main/example/ts-example)
@@ -93,7 +104,7 @@ Please read `Contributing.md` for details on our code of conduct, and the proces
 ## How to contribute to this project:
 
 1. Fork it 😜 and make sure you have Node(>14) installed!
-3. Install the pnpm using 
+2. Install the pnpm using
 
 ```
 npm i -g pnpm
@@ -101,21 +112,20 @@ npm i -g pnpm
 
 3. Install the dependencies
 
-``` 
+```
 cd package && pnpm i
 ```
 
 4. Do you magic (We recommend that you stick to the code and not configuration files unless there is a specific reason to do so)🪄
-5. Build the TypeScript 
+5. Build the TypeScript
 
 ```
 pnpm run build
 ```
+
 6. Run npm link and move to the examples and run npm link <package-name> and test it! [Refer to this!](https://www.jamesqquick.com/blog/how-to-test-npm-packages-locally/)
 7. Make sure you run all the tests before making a pull request!
 8. Make a pull request, sit back and enjoy while we review your changes.
-
-
 
 ## Forking this repo 🚨
 
