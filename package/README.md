@@ -131,3 +131,20 @@ pnpm run build
 6. Run npm link and move to the examples and run npm link <package-name> and test it! [Refer to this!](https://www.jamesqquick.com/blog/how-to-test-npm-packages-locally/)
 7. Make sure you run all the tests before making a pull request!
 8. Make a pull request, sit back and enjoy while we review your changes.
+
+## Example without express-status-validate:
+
+<img width="1324" alt="image" src="https://github.com/shawshankkumar/express-status-validation/assets/74819565/ef528768-a35e-47f4-a60d-f0e88fc92fe3">
+
+```
+RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: { a: 's' }
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.writeHead (node:_http_server:344:11)
+    at ServerResponse._implicitHeader (node:_http_server:335:8)
+    at write_ (node:_http_outgoing:908:9)
+    at ServerResponse.end (node:_http_outgoing:1016:5)
+```
+
+## Example with express-status-validate enabled:
+
+<img width="1349" alt="image" src="https://github.com/shawshankkumar/express-status-validation/assets/74819565/d0e69439-12f2-4de8-ad2d-dc7e814c9729">
