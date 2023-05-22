@@ -23,6 +23,10 @@ It does what a middleware should, it sits quietly and on a day to day basis, you
 
 ## How to use it in your JS/TS project?
 
+Checkout this [replit example](https://replit.com/@ShashankKumar12/express-status-validate?v=1#index.js)
+
+OR follow the steps below:
+
 1. CD into the root folder of your project!
 2. Install [express-status-validate](https://www.npmjs.com/package/express-status-validate) using pnpm (pnpm is cool, yarn is boring and npm is npm.)
 

@@ -89,6 +89,8 @@ app.listen(3000, () => {
 
 ```
 
+Checkout this [replit example](https://replit.com/@ShashankKumar12/express-status-validate?v=1#index.js)
+
 > **_NOTE:_** app.use(expressStatusValidate(500)) must be on top to work as desired.
 
 ## Examples:
