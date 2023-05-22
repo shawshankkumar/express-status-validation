@@ -7,3 +7,8 @@
 <p align="center">
     A dead simple npm library to validate express.js response status codes.
 </p>
+
+## Inspiration for this package
+
+1. To learn how to make packages 😉
+2. I spent around 40-50 minutes debugging why [SRMKZILLA's](https://srmkzilla.net) backend kept crashing. Found out someone passed the mongo error codes(single digit) to express and viola. 
