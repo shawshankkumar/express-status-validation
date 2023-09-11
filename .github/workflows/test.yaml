@@ -3,7 +3,7 @@ name: Test
 on:
   pull_request:
     branches:
-      - main
+      - main-v2.0
 
 jobs:
   push:
@@ -17,7 +17,10 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
-      - run: npm i -g pnpm
-      - run: pnpm install --no-frozen-lockfile
-      - run: pnpm run build
-      - run: pnpm run test
+      - name: setup bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: "1.0.0"
+      - run: bun install --frozen-lockfile
+      - run: bun run build
+      - run: bun run test
