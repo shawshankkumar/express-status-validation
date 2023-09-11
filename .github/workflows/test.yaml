@@ -28,6 +28,6 @@ jobs:
         uses: oven-sh/setup-bun@v1
         with:
           bun-version: "1.0.0"
-      - run: bun install --frozen-lockfile
+      - run: bun install
       - run: bun run build
       - run: bun run test
