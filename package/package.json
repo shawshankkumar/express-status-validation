@@ -5,14 +5,15 @@
   "main": "./lib/index.js",
   "scripts": {
     "test": "jest --testTimeout=5000",
-    "build": "tsc"
+    "build": "tsup --dts-resolve"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/shawshankkumar/express-status-validation.git"
   },
   "keywords": [
-    "express.js", "bun"
+    "express.js",
+    "bun"
   ],
   "author": "shawshankkumar",
   "license": "ISC",
@@ -26,6 +27,9 @@
   "dependencies": {
     "@types/express": "^4.17.17"
   },
+  "peerDependencies":{
+    "express": "^4.17.1"
+  },
   "devDependencies": {
     "@types/jest": "^29.5.1",
     "@types/supertest": "^2.0.12",
@@ -33,6 +37,7 @@
     "jest": "^29.5.0",
     "supertest": "^6.3.3",
     "ts-jest": "^29.1.0",
+    "tsup": "^7.2.0",
     "typescript": "^5.0.4"
   }
 }
