@@ -4,6 +4,13 @@ on:
   pull_request:
     branches:
       - main-v2.0
+    types:
+      - opened
+      - reopened
+      - synchronize
+  push:
+    branches:
+      - main-v2.0
 
 jobs:
   push:
