@@ -5,3 +5,6 @@ pnpm-lock.yaml
 README.md
 tests
 *.js.map
+bun.lockb
+jest.config.js
+tsup.config.ts
