@@ -1,6 +1,6 @@
 {
   "name": "express-status-validate",
-  "version": "2.0.3",
+  "version": "2.0.5",
   "description": "A dead simple npm library to validate express.js response status codes.",
   "main": "./lib/index.js",
   "scripts": {
@@ -27,7 +27,7 @@
   "dependencies": {
     "@types/express": "^4.17.17"
   },
-  "peerDependencies":{
+  "peerDependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
@@ -39,5 +39,8 @@
     "ts-jest": "^29.1.0",
     "tsup": "^7.2.0",
     "typescript": "^5.0.4"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

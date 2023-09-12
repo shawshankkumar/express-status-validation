@@ -1,6 +1,6 @@
 {
   "name": "express-status-validate-root",
-  "version": "2.0.3",
+  "version": "2.0.5",
   "description": "Root package.json for the entire project. Includes package, example and other things.",
   "scripts": {
     "publish": "cd package && npm run publish"
