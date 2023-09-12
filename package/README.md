@@ -30,7 +30,7 @@ It does what a middleware should, it sits quietly and on a day to day basis, you
 ```
 bun add express-status-validate
 ```
-
+or
 
 ```
 pnpm i express-status-validate
