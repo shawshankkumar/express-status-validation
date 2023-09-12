@@ -1,0 +1,25 @@
+name: Publish to NPM
+
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./package
+    steps:
+      - uses: actions/checkout@v3
+      - name: setup bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: "1.0.0"
+      - run: bun i
+      - run: bun run test
+      - run: bun run build
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
