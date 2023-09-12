@@ -12,6 +12,7 @@
 
 1. To learn how to make packages 😉
 2. I spent around 40-50 minutes debugging why [SRMKZILLA's](https://srmkzilla.net) backend kept crashing. Found out someone passed the mongo error codes(single digit) to express and viola.
+3. Bun v1 came out and I decided to ditch pnpm and node. 
 
 ## What does it do?
 
@@ -24,7 +25,12 @@ It does what a middleware should, it sits quietly and on a day to day basis, you
 ## How to use it in your JS/TS project?
 
 1. CD into the root folder of your project!
-2. Install [express-status-validate](https://www.npmjs.com/package/express-status-validate) using pnpm (pnpm is cool, yarn is boring and npm is npm.)
+2. Install [express-status-validate](https://www.npmjs.com/package/express-status-validate) using bun (bun is cool, yarn is boring and npm is npm.) Pnpm is also cool btw :p
+
+```
+bun add express-status-validate
+```
+
 
 ```
 pnpm i express-status-validate
