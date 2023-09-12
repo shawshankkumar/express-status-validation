@@ -8,3 +8,4 @@ tests
 bun.lockb
 jest.config.js
 tsup.config.ts
+.prettierrc
