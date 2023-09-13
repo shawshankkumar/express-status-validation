@@ -33,3 +33,4 @@ function getFinalStatusCode(statusCode, defaultStatusCode = 500) {
 }
 
 export { expressStatusValidate };
+
