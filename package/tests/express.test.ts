@@ -1,5 +1,6 @@
 import request from "supertest";
 import { app } from "./express";
+import { expect, test, describe } from "bun:test";
 
 describe("Test the correct routes", () => {
   test("It should return 200", async () => {
