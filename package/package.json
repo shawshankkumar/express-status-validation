@@ -4,7 +4,7 @@
   "description": "A dead simple npm library to validate express.js response status codes.",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "jest --testTimeout=5000",
+    "test": "bun test",
     "build": "tsup --dts-resolve"
   },
   "repository": {
