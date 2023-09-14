@@ -29,6 +29,8 @@ jobs:
         run: bun ./scripts/publish.js ${GITHUB_REF}
       - name: Commit package.json updates
         uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: update package.json version
 
       - run: npm publish
         env:
