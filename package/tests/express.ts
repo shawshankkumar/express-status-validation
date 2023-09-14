@@ -1,5 +1,5 @@
 import express, { Request, Response, NextFunction } from "express";
-import { expressStatusValidate } from "../src/index";
+import expressStatusValidate from "../src/index";
 
 const app = express();
 
