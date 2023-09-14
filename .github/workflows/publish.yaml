@@ -20,6 +20,8 @@ jobs:
       - run: bun i
       - run: bun test
       - run: bun run build
+      - name: update version in package json
+        run: bun ./scripts/publish.js ${GITHUB_REF}
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
