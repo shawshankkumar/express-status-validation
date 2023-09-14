@@ -12,6 +12,7 @@
 
 1. To learn how to make packages 😉
 2. I spent around 40-50 minutes debugging why [SRMKZILLA's](https://srmkzilla.net) backend kept crashing. Found out someone passed the mongo error codes(single digit) to express and viola.
+3. After months of making this, bun 1.0.0 was released and I thought, Hey, why not migrate everything in this project to bun (test, runtime, package management and more) and added a bunch of actions.
 
 ## What does it do?
 
