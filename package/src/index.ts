@@ -32,5 +32,4 @@ function getFinalStatusCode(statusCode, defaultStatusCode = 500) {
   return defaultStatusCode;
 }
 
-export { expressStatusValidate };
-
+export default expressStatusValidate ;
