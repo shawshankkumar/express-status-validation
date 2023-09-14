@@ -22,6 +22,12 @@ jobs:
       - run: bun run build
       - name: update version in package json
         run: bun ./scripts/publish.js ${GITHUB_REF}
+      - name: Commit package.json updates
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: update package.json version
+          committer_name: GitHub Actions
+          committer_email: actions@github.com
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
